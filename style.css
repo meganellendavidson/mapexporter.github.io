@@ -1,0 +1,64 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    height: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    background-color: #f2eeeb;
+  }
+  
+  @media (min-width: 650px) {
+    body {
+      padding: 0 2rem;
+    }
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+  }
+
+.nav{
+    height: 100%;
+    width:25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    left: 0;
+    background-color: rgb(241, 235, 214);
+}
+.map{
+    height: 100%;
+    width:75%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    right: 0;
+    background-color: lightblue;
+}
+.centered_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.clearfix{
+    clear:both;
+}
+
+#mapid {
+    width: 50%;
+    height: 75%;
+    /* Center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
